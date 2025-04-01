@@ -4,92 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Louis Daviet - Consultant Data</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ecf0f1;
-            color: #2c3e50;
-        }
-        .container {
-            width: 50%;
-            margin: 40px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #2980b9;
-            text-align: center;
-        }
-        .section {
-            margin-bottom: 25px;
-            padding-bottom: 15px;
-            border-bottom: 2px solid #ddd;
-        }
-        .two-columns {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        .left-column {
-            flex: 1;
-            text-align: center;
-        }
-        .right-column {
-            flex: 3;
-        }
-        .left-column img {
-            width: 60px;
-            height: auto;
-            border-radius: 50%;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        ul li::before {
-            content: "\2022"; 
-            color: #2980b9;
-            font-weight: bold;
-            display: inline-block;
-            width: 1em;
-            margin-left: -1em;
-        }
-        .contact a {
-            color: #2980b9;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 20px;
-            padding-top: 10px;
-            border-top: 2px solid #ddd;
-            font-size: 14px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <h1>Louis Daviet</h1>
-        <h2>Consultant Data</h2>
+        <div class="profile">
+            <img src="photo-profil.jpg" alt="Photo de profil de Louis Daviet">
+            <h1>Louis Daviet</h1>
+            <h2>Consultant Data</h2>
+        </div>
         
         <div class="section">
             <h2>À propos</h2>
-            <p>Passionné par la data et l'analyse, j'accompagne les entreprises dans la valorisation de leurs données grâce à des solutions performantes en data engineering et analytics engineering.</p>
+            <p>Passionné par la data et l'analyse, j'accompagne les entreprises dans la valorisation de leurs données grâce à des solutions performantes en data engineering et analytics engineering.  
+
+                Avec une expertise en Python, SQL et R, je maîtrise la collecte, le traitement et la modélisation des données, ainsi que leur visualisation pour des prises de décision stratégiques. J’ai travaillé sur des projets d’analyse prédictive, de classification et de data mining, notamment autour des marchés immobiliers et des défaillances d’entreprises.  
+                
+                Ma formation en gestion de projets informatiques et en statistiques me permet d’intervenir sur des pipelines de données robustes et optimisés. J’ai également développé des compétences en bases de données relationnelles et NoSQL, et en visualisation avancée avec Excel et R.  
+                
+                Que ce soit pour structurer vos données, automatiser vos processus ou concevoir des analyses avancées, je suis disponible pour des missions freelances adaptées à vos besoins.  </p>
         </div>
         
         <div class="section">
             <h2>Compétences clés</h2>
             <ul>
-                <li><strong>Analyse de données :</strong> R, Python, SQL</li>
-                <li><strong>Automatisation :</strong> Web scraping, APIs, CI/CD</li>
-                <li><strong>Développement :</strong> Python, C, C#, Java</li>
-                <li><strong>Web :</strong> HTML/CSS, PHP</li>
-                <li><strong>Data Visualisation :</strong> LookerStudio, Excel</li>
+                <li><i class="fas fa-chart-line"></i> Analyse de données : R, Python, SQL</li>
+                <li><i class="fas fa-cogs"></i> Automatisation : Web scraping, APIs, CI/CD</li>
+                <li><i class="fas fa-code"></i> Développement : Python, C, C#, Java</li>
+                <li><i class="fas fa-globe"></i> Web : HTML/CSS, PHP</li>
+                <li><i class="fas fa-chart-bar"></i> Data Visualisation : LookerStudio, Excel</li>
             </ul>
         </div>
 
@@ -133,8 +77,9 @@
         
         <div class="section contact">
             <h2>Contact</h2>
-            <p>📩 Disponible dès maintenant</p>
-            <p>🔗 <a href="https://www.linkedin.com/in/louis-daviet-4560242a1/">LinkedIn</a></p>
+            <p><i class="fas fa-envelope"></i> Disponible dès maintenant</p>
+            <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/louis-daviet-4560242a1/">LinkedIn</a></p>
+            <a href="CV_Louis_Daviet.pdf" class="button"><i class="fas fa-download"></i> Télécharger mon CV</a>
         </div>
         
         <div class="footer">
