@@ -39,6 +39,9 @@ body {
 
 .intro-text p {
     margin-top: 15px;
+    text-align: justify;
+    padding-right: 10px; /* Réduit la marge à droite */
+    padding-left: 10px; /* Ajoute un peu de marge à gauche pour l'équilibre */
 }
 
 .section {
@@ -54,11 +57,11 @@ body {
 .two-columns {
     display: flex;
     align-items: flex-start;
-    gap: 30px;
+    gap: 20px;
 }
 
 .left-column {
-    flex: 1;
+    flex: 0.4;
     text-align: center;
 }
 
@@ -70,7 +73,14 @@ body {
 }
 
 .right-column {
-    flex: 3;
+    flex: 1; /* Réduit la taille de la colonne à 1/4 de l'espace */
+    text-align: justify;
+    padding-right: 10px;
+    padding-left: 10px; /* Ajout de padding pour mieux espacer le contenu */
+    background-color: #f9f9f9; /* Ajout d'un fond pour bien délimiter le bloc */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 10px; /* Ajout d'un petit écart en haut pour le bloc */
 }
 
 ul {
@@ -80,6 +90,7 @@ ul {
 
 ul li {
     margin-bottom: 10px;
+    text-align: justify;
 }
 
 ul li::before {
@@ -87,27 +98,29 @@ ul li::before {
 }
 
 ul li i {
-    margin-right: 10 px;
+    margin-right: 10px;
     color: #0077b5;
 }
 
 ul.etudes li ul {
-    list-style: none; /* Enlever les puces des sous-listes */
-    padding-left: 20px; /* Ajouter un retrait pour les sous-listes */
-    margin-top: 5px; /* Ajouter un peu d'espace au-dessus des sous-listes */
+    list-style: none;
+    padding-left: 20px;
+    margin-top: 5px;
 }
 
 ul.etudes li ul li {
-    margin-bottom: 5px; /* Ajouter un peu d'espace entre les éléments des sous-listes */
+    margin-bottom: 5px;
+    text-align: justify;
+    padding-left: 10px;
 }
 
 ul.etudes li ul li::before {
-    content: "-"; /* Ajouter un tiret avant chaque élément de la sous-liste */
-    margin-right: 5px; /* Ajouter un peu d'espace entre le tiret et le texte */
+    content: "-";
+    margin-right: 5px;
 }
 
 ul.etudes li i.fas.fa-graduation-cap {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .contact a {
@@ -119,14 +132,16 @@ ul.etudes li i.fas.fa-graduation-cap {
 
 .contact a:hover {
     color: #005a87;
+    text-decoration: underline;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .footer {
     text-align: center;
     margin-top: 30px;
-    padding-top: 15px;
+    padding: 15px 0;
     border-top: 1px solid #eee;
-    font-size: 14px;
+    font-size: 16px;
     color: #777;
 }
 
@@ -149,7 +164,7 @@ ul.etudes li i.fas.fa-graduation-cap {
 
 .competences-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Grille adaptative */
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     gap: 15px;
 }
 
@@ -166,7 +181,7 @@ ul.etudes li i.fas.fa-graduation-cap {
 }
 
 .competence-logo {
-    width: 50px; /* Taille des logos */
+    width: 50px;
     height: auto;
     margin-bottom: 10px;
 }
