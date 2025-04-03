@@ -244,6 +244,7 @@ ul.experiences li:hover, ul.etudes li:hover {
   }
   
   .projet {
+    text-align: justify;
     background-color: #ffffff;  /* Fond blanc pour chaque projet */
     padding: 20px;
     border-radius: 8px;
