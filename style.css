@@ -123,6 +123,19 @@ ul.etudes li i.fas.fa-graduation-cap {
     margin-bottom: 15px;
 }
 
+ul.experiences li, ul.etudes li {
+    background-color: #f9f9f9; /* Fond clair pour les éléments */
+    border-radius: 8px; /* Bords arrondis */
+    padding: 10px; /* Espacement interne pour mieux aérer */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ajout d'une légère ombre */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Effet de transition pour les hover */
+}
+
+ul.experiences li:hover, ul.etudes li:hover {
+    background-color: #e8f0fe; /* Changement de couleur au survol */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Ombre plus marquée */
+}
+
 .contact a {
     color: #0077b5;
     text-decoration: none;
@@ -169,19 +182,80 @@ ul.etudes li i.fas.fa-graduation-cap {
 }
 
 .competence-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
-    border: 1px solid #eee;
-    border-radius: 8px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
+
+.competence-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
 
 .competence-logo {
     width: 50px;
     height: auto;
     margin-bottom: 10px;
+}
+.competence-item:hover {
+    transform: translateY(-10px); /* Légère élévation */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15); /* Ombre plus marquée */
+    background-color: #f4f7fc; /* Couleur de fond légèrement plus claire */
+}
+
+.competence-item:hover img {
+    transform: scale(1.1); /* Légère augmentation de la taille de l'icône */
+    filter: brightness(1.2); /* Augmente la luminosité de l'icône */
+}
+
+.competence-item:hover .competence-tooltip {
+    display: block; /* Affiche le tooltip lors du survol */
+}
+.competence-tooltip {
+    display: none;
+    position: absolute;
+    top: 100%;  /* Placer le tooltip sous l'élément */
+    left: 50%;
+    transform: translateX(-50%);  /* Centrer horizontalement */
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    font-size: 0.9em;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;  /* Espacement entre l'icône et le tooltip */
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    .two-columns {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .left-column, .right-column {
+        flex: 1;
+        text-align: left;
+    }
+
+    .competences-grid {
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    }
+
+    .footer {
+        font-size: 14px;
+    }
 }
