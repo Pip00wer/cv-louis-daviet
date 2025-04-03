@@ -19,7 +19,7 @@
                 <p>
                     Passionné par la data, j’aide les entreprises à exploiter pleinement leur potentiel en transformant leurs données en informations stratégiques. Grâce à une expertise en data engineering et analytics engineering, j’interviens sur la conception et l’optimisation de pipelines de données, l’automatisation des processus et la valorisation des données à travers des analyses avancées et des visualisations percutantes. <br />
 
-                    Maîtrisant des outils comme Python, SQL, R, Docker, Mage.AI et Looker Studio, j’ai travaillé sur divers projets alliant structuration et performance.<br />    
+                    Maîtrisant des outils comme Python, SQL, R, Docker, Mage.AI et Looker Studio.<br />    
                 </p>        
             </div>
         </section>
@@ -94,17 +94,69 @@
                 </div>
                 <div class="right-column">
                     <ul class="experiences">
-                        <li><i class="fas fa-check-circle"></i> Ingénierie des données : Mise en place d'une solution de construction et de gestion de pipelines de données pour l'intégration et la transformation des données.</li>
-                        <li><i class="fas fa-check-circle"></i> Containerisation & DevOps : Création et gestion de conteneurs Docker pour le déploiement des applications et services sur des environnements isolés. Publication et gestion d'images Docker sur Docker Hub pour faciliter les déploiements et la collaboration en équipe.</li>
+                        <li><i class="fas fa-check-circle"></i> Infrastructure Data : Mise en place d'une solution de construction et de gestion de pipelines de données pour l'intégration et la transformation des données.</li>
+                        <li><i class="fas fa-check-circle"></i> Containerisation & DevOps : Création et gestion de conteneurs Docker pour le déploiement des applications et services sur des environnements isolés. </li>
                         <li><i class="fas fa-check-circle"></i> Data Visualization : Analyse avancée, réalisation de tableaux de bord interactifs et personnalisés avec Looker Studio pour le suivi des indicateurs clés de performance.</li>
                         <li><i class="fas fa-check-circle"></i> Collecte de données via API : Utilisation et intégration d'APIs pour l'extraction et l'automatisation de la collecte de données.</li>
                         <li><i class="fas fa-check-circle"></i> Optimisation des bases de données & SQL : Optimisation des bases de données et des requêtes SQL pour améliorer les performances et l'efficacité des traitements de données.</li>                        </li>
-                        <li><i class="fas fa-check-circle"></i> CI/CD : Mise en place de pipelines CI/CD avec GitHub Actions pour automatiser le déploiement, les tests et la gestion des versions des applications et des services. </li>
+                        <li><i class="fas fa-check-circle"></i> CI/CD : Mise en place de pipelines CI/CD pour automatiser le déploiement, les tests et la gestion des versions des applications et des services. </li>
                     </ul>
                 </div>
             </div>
         </section>
         
+        <section id="projets">
+            <h2>Projets</h2>
+            <div class="projets-container">
+                <!-- Projet 1 -->
+                <div class="projet">
+                    <h3>POC - MageAI</h3>
+                    <div class="projet-details">
+                        <p><strong>🎯 Objectif:</strong> Remplacer la solution d'intégration de données par une alternative plus simple et flexible, permettant une gestion plus intuitive des pipelines de données.</p>
+        
+                        <p><strong>📝 Méthode:</strong></p>
+                        <ul class="etapes-projet">
+                            <li>Analyse des besoins et sélection de MageAI comme outil d'orchestration.</li>
+                            <li>Configuration de MageAI en local via Docker, incluant le développement des pipelines et l'analyse de la gestion des secrets.</li>
+                            <li>Mise en place du développement et de l'intégration continue avec versionning.</li>
+                            <li>Déploiement sur un serveur distant, incluant la création d'une image Docker sur Docker Hub et son déploiement sur le serveur.</li>
+                            <li>Assurance de la persistance des données (pipelines, triggers, secrets) via des volumes persistants pour PostgreSQL et MageAI.</li>
+                            <li>Tests de la solution et optimisation des performances.</li>
+                        </ul>
+                        
+        
+                        <p><strong>💻 Technologies:</strong> Python, MageAI, Docker, PostgreSQL, API, Github</p>
+        
+                        <p><strong>🏆 Résultats:</strong> Mise en place d'une solution simple, automatisée, permettant d'importer des données en temps réel.</p>
+                    </div>
+                </div>
+        
+                <!-- Projet 2 -->
+                <div class="projet">
+                    <h3>Dashboard - Mission Freelance</h3>
+                    <div class="projet-details">
+                        <p><strong>🎯 Objectif:</strong> Développer un tableau de bord interactif permettant à un freelance d'obtenir une vue d'ensemble en temps réel des offres de missions disponibles.</p>
+                
+                        <p><strong>📝 Méthode:</strong></p>
+                        <ul class="etapes-projet">
+                            <li>Analyse des attentes des freelances, identification des informations essentielles à afficher sur le dashboard</li>
+                            <li>Développement de scripts de Web Scraping et utilisation d'API publique, afin de centraliser toutes les offres dans un format structuré pour traitement.</li>
+                            <li>Les offres collectées sont ensuite stockées dans Snowflake puis exportation des données vers Looker Studio pour permettre la création de visualisations dynamiques et interactives adaptées aux besoins du freelance.</li>
+                            <li>Création du tableau de bord interactif sur Looker Studio, intégration des filtres et mise en place de graphiques pour une visualisation claire des tendances du marché des freelances en temps réel.</li>
+                        </ul>
+                
+                        <p><strong>💻 Technologies:</strong> Python, Snowflake, SQL, Web Scrapping, API</p>
+                
+                        <p><strong>🏆 Résultats:</strong> Création d'un tableau de bord interactif et intuitif, offrant une vision claire et immédiate des offres disponibles pour les freelances.
+                        </div>
+                </div>
+                
+            </div>
+        </section>
+        
+        
+
+
         <section class="section">
             <h2>Études</h2>
             <div class="two-columns">
@@ -147,9 +199,16 @@
 
         <section class="section contact">
             <h2>Contact</h2>
-            <p><i class="fas fa-envelope"></i> <a href="mailto:louis.daviet@gmail.com">Disponible dès maintenant</a></p>
-            <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/louis-daviet-4560242a1/">LinkedIn</a></p>
-            <p><i class="fas fa-briefcase"></i> <a href="https://www.malt.fr/profile/louisdaviet">Malt</a></p>
+            <p>
+                <img src="img/mail-logo.png" alt="Mail Logo" class="social-logo">
+                <a href="mailto:louis.daviet@gmail.com">Mail</a></p>
+            <p> 
+                <img src="img/linkedin-logo.png" alt="Linkedin Logo" class="social-logo">
+                <a href="https://www.linkedin.com/in/louis-daviet-4560242a1/">LinkedIn</a></p>
+            <p> 
+                <img src="img/malt-logo.png" alt="Malt Logo" class="social-logo"> 
+                <a href="https://www.malt.fr/profile/louisdaviet">Malt</a>
+            </p>
         </section>
 
         <footer class="footer">

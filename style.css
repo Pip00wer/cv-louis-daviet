@@ -115,7 +115,6 @@ ul.etudes li ul li {
 }
 
 ul.etudes li ul li::before {
-    content: "-";
     margin-right: 5px;
 }
 
@@ -232,6 +231,75 @@ ul.experiences li:hover, ul.etudes li:hover {
     font-size: 0.9em;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     margin-top: 10px;  /* Espacement entre l'icône et le tooltip */
+}
+
+#projets {
+    padding: 40px 0;
+  }
+  
+  .projets-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+    gap: 20px;
+  }
+  
+  .projet {
+    background-color: #ffffff;  /* Fond blanc pour chaque projet */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #3498db; /* Bordure bleue à gauche */
+    transition: all 0.3s ease; /* Transition douce lors du survol */
+  }
+  
+  .projet:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Ombre plus forte lors du survol */
+    transform: translateY(-5px); /* Effet de décalage lors du survol */
+  }
+  
+  .projet h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;  /* Couleur du titre du projet */
+    margin-bottom: 10px;
+  }
+  
+  .projet p {
+    font-size: 1rem;
+    color: #7f8c8d;  /* Couleur du texte */
+    line-height: 1.6;
+  }
+  
+  .projet-details ul.etapes-projet {
+    padding-left: 50px;
+    list-style-type: disc;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .projet-details ul.etapes-projet li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #7f8c8d;  /* Couleur du texte des étapes */
+  }
+  
+  .projet-details ul.etapes-projet li:before {
+    color: #007bff;
+    font-size: 1.3em;
+    vertical-align: middle;
+    margin-right: 10px; /* Espace entre l'icône et le texte */
+  }
+  
+@media (max-width: 768px) {
+  .projets-container {
+    grid-template-columns: 1fr; /* Sur les petits écrans, on passe à une seule colonne */
+  }
+}
+
+
+
+.social-logo {
+    width: 16px;  /* Taille similaire aux icônes FontAwesome */
+    height: 16px;
 }
 
 
