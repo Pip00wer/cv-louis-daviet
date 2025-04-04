@@ -241,8 +241,12 @@ ul.experiences li:hover, ul.etudes li:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
     gap: 20px;
+    
   }
-  
+  .projet:nth-child(3) {
+    grid-column: span 2; /* Fait en sorte que le troisième projet occupe les deux colonnes */
+    justify-self: center; /* Centre le troisième projet dans sa grille */
+}
   .projet {
     text-align: justify;
     background-color: #ffffff;  /* Fond blanc pour chaque projet */
@@ -251,6 +255,8 @@ ul.experiences li:hover, ul.etudes li:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-left: 5px solid #3498db; /* Bordure bleue à gauche */
     transition: all 0.3s ease; /* Transition douce lors du survol */
+    justify-self: center; /* Centre l'élément horizontalement */
+
   }
   
   .projet:hover {
@@ -289,13 +295,13 @@ ul.experiences li:hover, ul.etudes li:hover {
     vertical-align: middle;
     margin-right: 10px; /* Espace entre l'icône et le texte */
   }
-  
+
+
 @media (max-width: 768px) {
   .projets-container {
     grid-template-columns: 1fr; /* Sur les petits écrans, on passe à une seule colonne */
   }
 }
-
 
 
 .social-logo {
