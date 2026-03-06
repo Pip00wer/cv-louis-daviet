@@ -15,7 +15,7 @@ header ul{
     display: flex;
     gap: 12px;
     padding: 0;
-    margin: 0 0 15px 0;
+    margin: 0 0 0 0;
 }
 
 header ul li{
@@ -29,7 +29,7 @@ header ul li a{
     justify-content: center;
     align-items: center;
 
-    width: 100%;
+    width: 95%;
     padding: 10px 18px;
 
     text-decoration: none;
@@ -87,7 +87,7 @@ header hr {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.intro-text h1, .intro-text h2 {
+h1, h2 {
     color: #0077b5;
     text-align: left;
     margin: 0;
@@ -300,7 +300,7 @@ ul.experiences li:hover, ul.etudes li:hover {
   
   .projets-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+    grid-template-columns: 1fr; /* 2 colonnes */
     gap: 20px;
     
   }
