@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Louis Daviet</title>
+    <title>Louis Daviet - Parcours</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,12 +16,11 @@
         <div class="skewed"></div>
 
         <header>
-            <h1>Louis Daviet</h1>
 
             <nav>
                 <ul>
-                    <li><a href="projects.html">Parcours</a></li>
-                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="index.html">Mon parcours</a></li>
+                    <li><a href="projects.html">Mes projects</a></li>
                 </ul>
             </nav>
             
@@ -31,6 +30,8 @@
 
         <section class="profile-intro">
             <div class="intro-text">
+                <h2>Présentation</h2>
+
                 <p>
                     <strong>Jeune diplômé en Data, spécialisé dans la conception de pipelines, l’intégration d’APIs et l’automatisation des workflows.</strong> 
                     J’accompagne les entreprises dans l’exploitation et la valorisation de leurs données, de la <strong>collecte</strong> à la <strong>visualisation</strong>.
@@ -39,7 +40,7 @@
                     Je suis à la recherche d’une nouvelle opportunité pour contribuer à des projets data stimulants, 
                     en mettant à profit mon <strong>autonomie</strong>, mon <strong>sens de l’organisation</strong> et mon <strong>esprit d’équipe</strong>.
                 </p>
-                <a href="file/CV_gene.pdf" class="button">📄 Télécharger mon CV</a>
+                <a href="file/CV_Louis.pdf" class="button">📄 Télécharger mon CV</a>
                 <a href="#contact" class="button">✉️ Me contacter</a>
             </div>
         </section>
@@ -110,7 +111,7 @@
             <div class="two-columns">
                 <div class="left-column">
                     <p>MPC - Consultant Data</p>
-                    <p>Oct. 2024 - Aujourd'hui</p>
+                    <p>Oct. 2024 - Oct. 2025</p>
                 </div>
                 <div class="right-column">
                     <ul class="experiences">
@@ -125,91 +126,13 @@
             </div>
         </section>
         
-        <section id="projets">
-            <h2>Projets</h2>
-            <div class="projets-container">
-                <!-- Projet 1 -->
-                <div class="projet">
-                    <h3>Migration d'infrastructure de données - MageAI</h3>
-                    <div class="projet-details">
-                        <p><strong>🎯 Objectif:</strong> Remplacer la solution d'intégration de données par une alternative plus simple et flexible, permettant une gestion plus intuitive des pipelines de données.</p>
-                        <p><strong>📝 Méthode:</strong></p>
-                        <ul class="etapes-projet">
-                            <li>Analyse des besoins et sélection de MageAI comme outil d'orchestration.</li>
-                            <li>Configuration de MageAI en local via Docker, incluant le développement des pipelines et l'analyse de la gestion des secrets.</li>
-                            <li>Mise en place du développement et de l'intégration continue avec versionning.</li>
-                            <li>Déploiement sur un serveur distant, incluant la création d'une image Docker sur Docker Hub et son déploiement sur le serveur.</li>
-                            <li>Assurance de la persistance des données (pipelines, triggers, secrets) via des volumes persistants pour PostgreSQL et MageAI.</li>
-                            <li>Tests de la solution et optimisation des performances.</li>
-                        </ul>
-                        <p><strong>💻 Technologies:</strong> Python, MageAI, Docker, PostgreSQL, API, Github</p>
-                        <p><strong>🏆 Résultats:</strong> Mise en place d'une solution simple, automatisée, permettant d'importer des données en temps réel.</p>
-                    </div>
-                </div>
-                <!-- Projet 2 -->
-                <div class="projet">
-                    <h3>Dashboard - Mission Freelance</h3>
-                    <div class="projet-details">
-                        <p><strong>🎯 Objectif:</strong> Développer un tableau de bord interactif permettant à un freelance d'obtenir une vue d'ensemble en temps réel des offres de missions disponibles.</p>
-                        <p><strong>📝 Méthode:</strong></p>
-                        <ul class="etapes-projet">
-                            <li>Analyse des attentes des freelances, identification des informations essentielles à afficher sur le dashboard</li>
-                            <li>Développement de scripts de Web Scraping et utilisation d'API publique, afin de centraliser toutes les offres dans un format structuré pour traitement.</li>
-                            <li>Les offres collectées sont ensuite stockées dans Snowflake puis exportation des données vers Looker Studio pour permettre la création de visualisations dynamiques et interactives adaptées aux besoins du freelance.</li>
-                            <li>Création du tableau de bord interactif sur Looker Studio, intégration des filtres et mise en place de graphiques pour une visualisation claire des tendances du marché des freelances en temps réel.</li>
-                        </ul>
-                        <p><strong>💻 Technologies:</strong> Python, Snowflake, SQL, Web Scrapping, API</p>
-                        <p><strong>🏆 Résultats:</strong> Création d'un tableau de bord interactif et intuitif, offrant une vision claire et immédiate des offres disponibles pour les freelances.</p>
-                    </div>
-                </div>
-                <!-- Projet 3 -->
-                <div class="projet">
-                    <h3>Analyseur VOD Twitch – Solution d'analyse de contenu par IA</h3>
-                    <div class="projet-details">
-                        <p><strong>🎯 Objectif:</strong> Automatiser l’extraction de moments clés et l’analyse de sentiment sur des rediffusions Twitch afin d'analyser la perception d'un live.</p>
-                        
-                        <p><strong>📝 Méthode:</strong></p>
-                        <ul class="etapes-projet">
-                            <li>Collecte automatisée de la VOD et des messages via l’API Twitch</li>
-                            <li>Retranscription des flux vidéo avec Whisper</li>
-                            <li>Traitement du langage naturel (NLP) et <em>prompt engineering</em> pour analyser les commentaires et détecter les temps forts.</li>
-                            <li>Ajout d'un outil de génération de courtes vidéos à partir des moments forts identifés</li>
-                            <li>Construction d’un pipeline capable de traiter de larges volumes (heures de vidéos, milliers de messages).</li>
-                            <li>Développement d’une interface interactive avec Streamlit pour visualiser les résultats.</li>
-                        </ul>
-                        <p><strong>💻 Technologies:</strong> Python, Streamlit, API Twitch, Whisper, LLM, NLP, Analyse de sentiment</p>
-                        <p><strong>🏆 Résultats:</strong> Génération de synthèses contextuelles, d’analyses sentimentales et de moments forts exploitables à partir de VOD complètes.</p>
-                    </div>
-                </div>
-                
-                <div class="projet">
-                    <h3>Mémoire - Déterminants géographiques des défaillances d'entreprises</h3>
-                    <div class="projet-details">
-                        <p><strong>🎯 Objectif :</strong> Établir un modèle statistique permettant de prédire et comprendre les défaillances d'entreprises en analysant leurs déterminants géographiques.</p>
-                        
-                        <p><strong>📝 Méthode :</strong></p>
-                        <ul class="etapes-projet">
-                            <li>Définition du sujet, élaboration de la méthode et identification des bases de données nécessaires.</li>
-                            <li>Choix du découpage géographique pour l'étude et sélection des méthodes statistiques appropriées.</li>
-                            <li>Recherche et collecte des différentes bases de données (Siren, Zone d'emploi, etc.) en fonction des choix faits.</li>
-                            <li>Mise en place d'un POC sur une région pour tester la validité de la méthode avant de l'étendre à l'ensemble du territoire.</li>
-                            <li>Application du modèle sur l'ensemble du territoire, analyse descriptive et cartographie des résultats.</li>
-                            <li>Développement d'un modèle statistique et d'une analyse de corrélation spatiale pour répondre à la problématique des défaillances d'entreprises.</li>
-                        </ul>
-                        
-                        <p><strong>💻 Technologies :</strong> R et ses packages (Car, tidiverse, mapSF)</p>
-                        
-                        <p><strong>🏆 Résultats :</strong> Une vision globale des différents déterminants géographiques pouvant expliquer les défaillances d'entreprises.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
         <section class="section">
-            <h2>Études</h2>
+            <h2>Formations</h2>
             <div class="two-columns">
                 <div class="left-column">
                     <p>M2 PISE - Université Paris Cité</p>
-                    <p>Oct. 2024 - Aujourd'hui</p>
+                    <p>Oct. 2024 - Oct. 2025</p>
                     <img src="img/logo-universite.png" alt="Université">
                 </div>
                 <div class="right-column">
@@ -242,6 +165,37 @@
                     </ul>
                 </div>
             </div>
+            <div class="two-columns">
+                <div class="left-column">
+                    <p>Licence d'économie - Université Paris Cité</p>
+                    <p>Sept. 2020 - Juin. 2023</p>
+                    <img src="img/logo-universite.png" alt="Université">
+                </div>
+                <div class="right-column">
+                    <ul class="etudes">
+                        <li>
+                            <i class="fas fa-graduation-cap"></i> Bases de données :
+                            <ul>
+                                <li>Modélisation de bases de données (MCD, MLD, MPD) pour la conception de systèmes de gestion de données efficaces.</li>
+                                <li>SQL / NoSQL : Maîtrise des langages de requête et des bases de données relationnelles et non relationnelles.</li>
+                                <li>Utilisation de SGBD : ORACLE, PostGres accompagnés de DBeaver </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>   
+            </div>                  
+        </section>
+
+        <section class="section">
+            <h2>Certifications et Langues</h2>
+            <div class="two-columns">
+                <div class="left-column">
+                    <img src="img/logo-universite.png" alt="Université">
+                </div>
+                <div class="right-column">
+                    
+                </div>   
+            </div>      
         </section>
 
         <section class="section contact" id="contact">
@@ -252,7 +206,7 @@
         
 
         <footer class="footer">
-            <p>&copy; 2025 Louis Daviet</p>
+            <p>&copy; 2026 Louis Daviet</p>
         </footer>
     </div>
 </body>
